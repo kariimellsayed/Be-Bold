@@ -1,22 +1,49 @@
 @import "tailwindcss";
 
 :root {
+  --color-primary-50: #ffffff;
+  --color-primary-100: #fdf0e9;
+  --color-primary-200: #fce2d4;
+  --color-primary-300: #fad3bf;
+  --color-primary-400: #f9c5aa;
+  --color-primary-500: #f06e2b; /* Base */
+  --color-primary-600: #d86326;
+  --color-primary-700: #c05822;
+  --color-primary-800: #a84d1e;
+  --color-primary-900: #904219;
+
+  --color-secondary: #000000;
+
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Fonts */
+  --font-roboto: "Roboto";
+  --font-roboto-slab: "Roboto Slab";
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Primary */
+  --color-primary-50: var(--color-primary-50);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-200: var(--color-primary-200);
+  --color-primary-300: var(--color-primary-300);
+  --color-primary-400: var(--color-primary-400);
+  --color-primary-500: var(--color-primary-500);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-800: var(--color-primary-800);
+  --color-primary-900: var(--color-primary-900);
+
+  /* Secondary */
+  --color-secondary: var(--color-secondary);
+
+  /* Fonts */
+  --font-sans: var(--font-roboto);
+  --font-heading: var(--font-roboto-slab);
 }
 
 body {
