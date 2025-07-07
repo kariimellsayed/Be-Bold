@@ -4,7 +4,7 @@ import { Roboto, Roboto_Slab } from "next/font/google";
 // Roboto
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["100", "200", "400", "500", "700"],
   display: "swap",
   variable: "--font-roboto",
 });
@@ -12,7 +12,7 @@ const roboto = Roboto({
 // Roboto Slab
 const robotoSlab = Roboto_Slab({
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
+  weight: ["100", "300", "400", "600", "700"],
   display: "swap",
   variable: "--font-roboto-slab",
 });
@@ -24,8 +24,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${roboto.variable} ${robotoSlab.variable}`}>
-      <body className="antialiased">{children}</body>
+    <html lang='en'>
+      <body
+        className={` ${robotoSlab.className} ${roboto.className} font-light text-sm`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
