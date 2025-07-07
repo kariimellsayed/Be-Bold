@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 473.999 29.999">
+<g transform="translate(0 0)">
+<text class="banner-3" transform="translate(237 20)" stroke-dasharray="undefined" style="stroke-dashoffset: 0px; fill: rgb(255, 255, 255);">
+<tspan>Helping businesses to grow since 2008</tspan>
+</text>
+<path class="banner-1" d="M473.5,15.5a10,10,0,0,1-10,10v4H10.5v-4a10,10,0,0,1,0-20V.5h453v5A10,10,0,0,1,473.5,15.5Z" stroke-dasharray="986.8409423828125" style="stroke-dashoffset: 0px;"></path>
+<rect class="banner-2" width="5.914" height="5.914" transform="translate(16.817 10.817) rotate(45)"></rect>
+<rect class="banner-2" width="5.914" height="5.914" transform="translate(457.814 10.814) rotate(45)"></rect>
+</g>
+</svg>
