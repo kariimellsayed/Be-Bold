@@ -1,3 +1,4 @@
+import Header from "./_components/Header";
 import "./globals.css";
 import { Roboto, Roboto_Slab } from "next/font/google";
 
@@ -24,10 +25,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang='en'>
+    <html lang="en">
       <body
         className={` ${robotoSlab.className} ${roboto.className} font-light text-sm`}
       >
+        <Header />
         {children}
       </body>
     </html>
